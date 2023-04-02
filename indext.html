@@ -19,13 +19,13 @@
   <script src="./indext.js"></script>
 </head>
 
-<body>
+<body onclick="handleHeaderButton()">
   <div class="bg-grey-img">
     <section class="max-1440-auto" id="hero">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button id="navbar-button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
               <span>
@@ -36,7 +36,7 @@
               <img src="./src/logo.png" alt="logo" class="me-5" />
             </a>
           </div>
-          <div class="btn btn-yellow-nav rounded-pill me-3 navbar-toggler">
+          <div class="btn btn-yellow-nav rounded-pill me-3 navbar-toggler" id="header-navbar-toggle">
             Регистрация
           </div>
 
@@ -78,7 +78,7 @@
             <span class="default-color-y">Gemblhub</span> - партнерская программа по фейсбук, схемному и стримерскому
             трафику
           </h2>
-          <img id="img-mobile" src="./src/ggg.png" alt="">
+          <img id="img-mobile" src="./src/ggg-mobile.png" alt="">
           <div class="btn btn-yellow rounded-pill text-uppercase">
             Лучшие условия
           </div>
@@ -88,12 +88,15 @@
     </section>
   </div>
 
-  <section class="d-flex section-2 max-1440-auto" id="aboutus">
-    <div class="col-5">
+  <section class="d-flex aboutus max-1440-auto" id="aboutus">
+    <div class="chip-desk">
       <img src="./src/three.png" alt="three">
     </div>
-    <div class="col-5 d-flex align-items-center justify-content-center">
-      <div class="section-2-r">
+    <div class="position-relative chip-mobile">
+      <img class="position-absolute top-0 start-0" src="./src/three.png" alt="three">
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="card-bonus">
         <h2 class="m-title">
           О нас:
         </h2>
@@ -106,7 +109,7 @@
     </div>
   </section>
 
-  <section class="text-dark section-3">
+  <section class="text-dark about-skills">
     <h1 class="text-center title">Сотрудничая с нами, ты получишь:</h1>
     <div class="max-1000-auto">
       <div class="col-ul">
@@ -130,7 +133,7 @@
     </div>
   </section>
 
-  <section class="section-4" >
+  <section class="webmater" >
     <div class="max-1000-auto" id="webmater">
       <div class="item mx-2">
         <h1>Вебмастеру</h1>
@@ -151,22 +154,22 @@
     </div>
   </section>
 
-  <section class="section-5" id="Bonuses">
-    <div class="max-1000-auto bg-gift">
-      <div class="col-sm-6 mb-120">
-        <div class="section-2-r mt-5">
-          <h2 class="m-title">
-            Бонусы
-          </h2>
-          <p class="text-dark contents">
-            Свежие бонусы специально для наших веб-мастеров
-          </p>
-        </div>
+  <section class="Bonuses" id="Bonuses">
+    <div class="gift-section justify-content-center d-flex mx-auto align-items-center mt-2">
+      <div class="card-bonus">
+        <h2 class="m-title">
+          Бонусы
+        </h2>
+        <p class="text-dark contents">
+          Свежие бонусы специально для наших веб-мастеров
+        </p>
+        <img src="./src/gift.png" class="img-gift-mobile" alt=""/>
       </div>
+      <img src="./src/gift.png" class="img-gift" alt=""/>
     </div>
   </section>
 
-  <section class="row section-6 py-5 container-fluid">
+  <section class="row Bonuses-items py-5 container-fluid">
     <div class="news-item mx-2">
       <div>
         <img src="./src/news/first-title.png" alt="title">
@@ -224,9 +227,9 @@
       <div class="default-color-y pt-5">
         <h2>По вопросам сотрудничества</h2>
       </div>
-      <div class="row text-light justify-content-center">
+      <div class="row text-light justify-content-center pb-5">
         <div class="col-md-6 d-flex justify-content-center py-2">
-          <div class="d-flex btn-tg-mail align-items-center">
+          <div class="d-flex btn-tg-mail align-items-center" id="telegram-contact">
             <span class="d-flex align-items-center justify-content-center"><img src="./src/telegram.png"
                 alt="tg"></span>
             <p class="ps-4 m-0">
@@ -236,7 +239,7 @@
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center py-2">
-          <div class="d-flex btn-tg-mail align-items-center">
+          <div class="d-flex btn-tg-mail align-items-center" id="mail-contact">
             <span class="d-flex align-items-center justify-content-center"><img src="./src/mail.png" alt="tg"></span>
             <p class="ps-4 m-0">
               my_log@gmail.com
@@ -250,6 +253,7 @@
   <section>
     <div class="space-contact"></div>
   </section>
+  
   <footer style="background-color: #141414;">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">

@@ -27,6 +27,12 @@ body {
   color: #000000;
 }
 
+#telegram-contact, #mail-contact {
+  cursor: pointer;
+}
+#telegram-contact:hover, #mail-contact:hover {
+  font-size: 17px;
+}
 .max-1000-auto {
   max-width: 1000px;
   margin: auto;
@@ -34,9 +40,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .max-1440-auto {
   max-width: 1440px;
-  margin: auto; 
+  margin: auto;
 }
 
 /* Nav */
@@ -47,7 +54,9 @@ body {
   background: #FF7C00;
   align-items: center;
 }
-
+#navbarSupportedContent a:hover {
+  color: #FF7C00 !important;
+}
 .hero {
   padding-top: 167px;
   padding-bottom: 190px;
@@ -62,8 +71,8 @@ body {
 
 .hero .btn {
   margin-top: 95px;
-  width: 345px;
-  height: 80px;
+  max-width: 345px;
+  max-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +98,7 @@ body {
 
 /* Section 2 */
 
-.section-2-r {
+.card-bonus {
   max-width: 580px;
   background: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
@@ -105,11 +114,11 @@ body {
 
 
 /* Section 3 */
-.section-3 {
+.about-skills {
   padding-bottom: 50px;
 }
 
-.section-3 title {
+.about-skills title {
   font-size: 35px;
   line-height: 41px;
 }
@@ -118,7 +127,7 @@ body {
   max-width: 450px;
 }
 
-.section-3 li {
+.about-skills li {
   display: flex;
   align-items: center;
   max-width: 362px;
@@ -128,11 +137,11 @@ body {
   font-size: 22px;
 }
 
-.section-3 li span {
+.about-skills li span {
   margin-right: 24px;
 }
 
-.section-4 {
+.webmater {
   padding-top: 30px;
   padding-bottom: 60px;
   background-image: url(./src/Frame2.png);
@@ -140,7 +149,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-4 .item {
+.webmater .item {
   max-width: 372px;
   margin: 52px;
   background: #1E1914;
@@ -149,7 +158,7 @@ body {
   box-shadow: 14px 12px 30px rgba(0, 0, 0, 0.76);
 }
 
-.section-4 .btn {
+.webmater .btn {
   line-height: 26px;
   color: white;
   padding: 27px 36px;
@@ -159,7 +168,7 @@ body {
   margin: 44px 39px;
 }
 
-.section-4 .item h1 {
+.webmater .item h1 {
   padding-top: 47px;
   font-size: 40px;
   line-height: 47px;
@@ -167,27 +176,39 @@ body {
   color: #FF7C00;
 }
 
-.section-4 .item p {
+.webmater .item p {
   font-size: 24px;
   line-height: 135%;
   padding: 41px 0px;
 }
 
-.bg-gift {
-  background-image: url(./src/gift.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.Bonuses .card-bonus {
+  height: fit-content;
+}
+
+.Bonuses .gift-section {
+  max-width: 1000px;
+}
+
+.Bonuses .img-gift {
+  width: 40%;
+  max-width: 400px;
+  margin-left: 50px;
+}
+
+.Bonuses .img-gift-mobile {
+  display: none;
 }
 
 .mb-120 {
   margin-bottom: 120px;
 }
 
-.section-6 {
+.Bonuses-items {
   justify-content: center;
 }
 
-.section-6 p {
+.Bonuses-items p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -196,7 +217,7 @@ body {
   justify-content: center;
 }
 
-.section-6 .news-item {
+.Bonuses-items .news-item {
   margin-top: 20px;
   max-width: 372px;
   padding: 40px;
@@ -207,7 +228,7 @@ body {
   align-content: space-between;
 }
 
-.section-6 img {
+.Bonuses-items img {
   padding-bottom: 24px;
 }
 
@@ -287,6 +308,7 @@ body {
   width: 47px;
   height: 47px;
 }
+
 .space-contact {
   height: 80px;
 }
@@ -299,6 +321,15 @@ footer {
 .contact-footer img {
   margin-right: 25px;
 }
+
+.chip-mobile {
+  display: none;
+}
+
+.chip-desk {
+  display: inline;
+}
+
 @media (max-width: 992px) {
   #img-desk {
     display: none;
@@ -320,10 +351,110 @@ footer {
     padding-top: 20px;
     padding-bottom: 26px;
   }
-  .contact-footer  {
+
+  .contact-footer {
     flex-direction: column;
   }
+
   .contact-footer img {
     margin-right: 18px;
+  }
+}
+
+#aboutus .card-bonus {
+  margin: 0px 20px 33px 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 796px) {
+  .chip-mobile {
+    display: inline;
+  }
+
+  .chip-mobile img {
+    width: 300px;
+  }
+
+  #aboutus .card-bonus {
+    margin: 200px 20px 33px 20px;
+    z-index: 1;
+  }
+
+  .chip-desk {
+    display: none;
+  }
+
+  .Bonuses .img-gift {
+    display: none;
+  }
+
+  .Bonuses .card-bonus {
+    margin-top: 100px;
+    max-width: 372px;
+    position: relative;
+  }
+
+  .Bonuses .img-gift-mobile {
+    display: inline !important;
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    max-width: 200px;
+    width: 50%;
+  }
+
+  /* hero */
+  .hero {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  .hero h2 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+  }
+
+  .hero .btn {
+    width: 184px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 19px;
+  }
+
+  .btn-yellow-nav {
+    width: 104px;
+    height: 31px;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 10px 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .navbar-brand .me-5 {
+    margin-right: 0px !important;
+  }
+
+  .m-title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .contents {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .webmater .item h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .webmater .item p {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
