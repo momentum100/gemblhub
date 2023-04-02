@@ -27,12 +27,16 @@ body {
   color: #000000;
 }
 
-#telegram-contact, #mail-contact {
+#telegram-contact,
+#mail-contact {
   cursor: pointer;
 }
-#telegram-contact:hover, #mail-contact:hover {
+
+#telegram-contact:hover,
+#mail-contact:hover {
   font-size: 17px;
 }
+
 .max-1000-auto {
   max-width: 1000px;
   margin: auto;
@@ -54,9 +58,11 @@ body {
   background: #FF7C00;
   align-items: center;
 }
+
 #navbarSupportedContent a:hover {
   color: #FF7C00 !important;
 }
+
 .hero {
   padding-top: 167px;
   padding-bottom: 190px;
@@ -73,6 +79,7 @@ body {
   margin-top: 95px;
   max-width: 345px;
   max-height: 80px;
+  padding: 26px 47px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,7 +373,7 @@ footer {
   z-index: 1;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 396px) {
   .chip-mobile {
     display: inline;
   }
@@ -452,9 +459,18 @@ footer {
     font-size: 32px;
     line-height: 38px;
   }
+
   .webmater .item p {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .hero .btn {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 19px;
+    width: 184px;
+    height: 55px;
   }
 }
