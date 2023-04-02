@@ -4,10 +4,10 @@ const handleHeaderButton = () => {
     var headerButton = document.getElementById("header-navbar-toggle");
     console.log("123", dropdown.className);
     if(dropdown.className.includes("show")) {
-      headerButton.style.display = "none";
+      headerButton.style.visibility = "hidden";
     }
     else {
-      headerButton.style.display = "inline";
+      headerButton.style.visibility = "visible";
     }
   }, 400)
 }
