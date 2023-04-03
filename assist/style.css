@@ -6,6 +6,10 @@ body {
 }
 
 /* Default - Font, Imges, Color */
+#hamburger-cancel {
+  display: none;
+}
+
 .default-color-y {
   color: #FF7C00;
 }
@@ -62,6 +66,7 @@ body {
 #navbarSupportedContent a:hover {
   color: #FF7C00 !important;
 }
+
 
 .hero {
   padding-top: 167px;
@@ -338,6 +343,14 @@ footer {
 }
 
 @media (max-width: 992px) {
+
+  #navbar.show {
+    background: #141414;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+  }
   #img-desk {
     display: none;
   }
