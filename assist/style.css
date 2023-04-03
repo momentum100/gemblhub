@@ -447,6 +447,8 @@ footer {
     font-size: 14px;
     line-height: 17px;
     padding: 19px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .btn-yellow-nav {
