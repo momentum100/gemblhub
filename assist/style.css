@@ -11,7 +11,7 @@ body {
 }
 
 .bg-grey-img {
-  background-image: url(./src/hero.png);
+  background-image: url(./images/hero.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -151,7 +151,7 @@ body {
 .webmater {
   padding-top: 30px;
   padding-bottom: 60px;
-  background-image: url(./src/Frame2.png);
+  background-image: url(./images/Frame2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -266,7 +266,7 @@ body {
 
 
 .contactus {
-  background-image: url(./src/contactbg.png);
+  background-image: url(./images/contactbg.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -457,6 +457,9 @@ footer {
   .contents {
     font-size: 20px;
     line-height: 24px;
+  }
+  .webmater {
+    background-image: url('./images/Frame2-mobile.png');
   }
   .webmater .item h1 {
     font-size: 32px;
