@@ -378,7 +378,7 @@ footer {
   z-index: 1;
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 568px) {
   .chip-mobile {
     display: inline;
   }
