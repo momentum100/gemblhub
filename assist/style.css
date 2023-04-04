@@ -499,8 +499,11 @@ footer {
 
   .webmater {
     background-image: url('./images/Frame2-mobile.png');
+    background-size: 100%;
   }
-
+  .webmater .item {
+    margin: 25px;
+  }
   .webmater .item h1 {
     font-size: 32px;
     line-height: 38px;
