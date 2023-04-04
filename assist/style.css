@@ -3,6 +3,9 @@ body {
   font-style: normal;
   font-weight: 500;
   color: white;
+  background-image: url(./images/desktopbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Default - Font, Imges, Color */
@@ -15,10 +18,10 @@ body {
 }
 
 .bg-grey-img {
-  background-image: url(./images/hero.png);
-  background-repeat: no-repeat;
+  /* background-image: url(./images/hero.png); */
+  /* background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* Text - Font*/
@@ -112,9 +115,11 @@ body {
 
 .card-bonus {
   max-width: 580px;
-  background: #FFFFFF;
+  background: #1E1914;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
   padding: 38px 0 42px 49px;
+  border: 1px solid #FF7C00;
+  box-shadow: 0px 0px 50px #2C1500;
 }
 
 .contents {
@@ -163,7 +168,7 @@ body {
 
 .webmater .item {
   max-width: 372px;
-  margin: 52px;
+  margin: 152px;
   background: #1E1914;
   border: 1px solid #FF7C00;
   text-align: center;
@@ -271,10 +276,11 @@ body {
 
 
 .contactus {
-  background-image: url(./images/contactbg.png);
+  /* background-image: url(./images/contactbg.png); */
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 226px;
 }
 
 .contactus>div {
@@ -323,6 +329,7 @@ body {
 
 .space-contact {
   height: 80px;
+  background-color: #FFFFFF;
 }
 
 footer {
@@ -336,10 +343,25 @@ footer {
 
 .chip-mobile {
   display: none;
+  background-image: url(./images/threebg.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .chip-desk {
   display: inline;
+  background-image: url(./images/threebg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-up {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  max-width: 950px;
+  z-index: -1;
+  width: 90%;
 }
 
 @media (max-width: 992px) {
@@ -351,6 +373,7 @@ footer {
     display: flex;
     align-items: flex-start;
   }
+
   #img-desk {
     display: none;
   }
@@ -442,11 +465,11 @@ footer {
   }
 
   .hero .btn {
-    width: 184px;
-    height: 55px;
     font-size: 14px;
     line-height: 17px;
     padding: 19px;
+    width: 184px;
+    height: 55px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -473,9 +496,11 @@ footer {
     font-size: 20px;
     line-height: 24px;
   }
+
   .webmater {
     background-image: url('./images/Frame2-mobile.png');
   }
+
   .webmater .item h1 {
     font-size: 32px;
     line-height: 38px;
@@ -487,15 +512,21 @@ footer {
     padding-right: 10px;
   }
 
-  .hero .btn {
-    font-size: 14px;
-    line-height: 17px;
-    padding: 19px;
-    width: 184px;
-    height: 55px;
-  }
   .webmater .btn {
     font-size: 16px;
     padding: 18px 26px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .contactus {
+    padding-bottom: 92px;
+  }
+
+  .footer-up {
+    z-index: -1;
+    bottom: 40px;
+    right: 0;
+    width: 90%;
   }
 }
